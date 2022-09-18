@@ -208,10 +208,7 @@ export const Form = ({ handleClick }) => {
           )}
         </div>
 
-        <button
-          type='submit'
-          className='formButton'
-        >
+        <button type='submit' className='formButton'>
           Submit
         </button>
       </form>

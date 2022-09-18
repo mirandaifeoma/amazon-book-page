@@ -84,7 +84,7 @@ export const Body = () => {
   return (
     <div className='body'>
       <div className='body2'>
-        <h1>grab a copy of amazon books</h1>
+        <h1>grab a copy of interesting books</h1>
         <div className='books'>
           {items.map((item) => {
             const { id, img, title, price } = item

@@ -21,14 +21,20 @@
 .create{
   text-align: center;
   font-size: 5vmin;
+  margin: 10px 0;
+  color: brown;
+}
+label{
+  font-size:large;
 }
 Input{
   width: 100%;
-  padding: 5px 0;
+  padding: 10px 0;
   margin: 5px 0;
 }
 .formButton{
-  background-color: black;
+  background-color: brown;
+  border-radius: 10px;
   color: white;
   padding: 5px 15px;
   margin-top: 10px;
@@ -52,6 +58,7 @@ span {
 }
 .myNav{
   width: 100%!important;
+  z-index: 100;
 }
 .sideBar{
   height: 100vh; 
