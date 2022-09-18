@@ -1,0 +1,151 @@
+
+.container{
+  width: 80vw;
+  margin: 1rem auto;
+  padding:5px 20px 20px 20px;
+  background-color: blanchedalmond;
+  height: fit-content;
+}
+.success-msg {
+  color:blue;
+  /* background:; */
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.create{
+  text-align: center;
+  font-size: 5vmin;
+}
+Input{
+  width: 100%;
+  padding: 5px 0;
+  margin: 5px 0;
+}
+.formButton{
+  background-color: black;
+  color: white;
+  padding: 5px 15px;
+  margin-top: 10px;
+}
+span {
+  color: red;
+  font-size: 1rem;
+  margin-top: 0.3rem;
+}
+/* .login{
+  margin: 8rem 0;
+} */
+.loginForm{
+  background-color: rgb(188, 196, 213);
+}
+.nav{
+  /* width: calc(100% - 4rem); */
+  margin-left: 4rem;
+  position: sticky;
+  top: 0;
+}
+.myNav{
+  width: 100%!important;
+}
+.sideBar{
+  height: 100vh; 
+  position: fixed; 
+  top:0;
+}
+
+.body {
+  background-color: rgb(222, 235, 248);
+  width: calc(100% - 4rem);
+  padding: 20px 0 0 0;
+  text-align: center;
+  margin-left: 4rem;
+}
+.body h1{
+  font-size: 7vmin;
+  text-transform:capitalize;
+  color: brown;
+  margin:0 0 50px 0;
+}
+.bookContainer{
+  height:360px;
+  border-radius: 13px;
+  background-color:rgb(235, 225, 212);
+}
+.books{
+  display: grid;
+    grid-template-columns: repeat(4, 20.5vw);
+    gap: 3%;
+}
+.body2{
+  padding: 0 1.5rem;
+}
+.amazonImage{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.footer{
+  width: 100%;
+  margin-top: 10rem ;
+}
+
+@media (max-width:1286px) {
+  .bookContainer{
+  height: 380px;
+  }
+}
+@media (max-width:1158px) {
+  .bookContainer{
+  height: 390px;
+  }
+}
+@media (max-width:1062px) {
+  .bookContainer{
+  height:400px;
+  }
+}
+@media (max-width:935px) {
+  .bookContainer{
+  height:415px;
+  }
+}
+
+@media (max-width:910px) {
+  .books {
+      grid-template-columns: repeat(3, 27vw);
+    }
+}
+@media (max-width:689px) {
+  .books {
+      grid-template-columns: repeat(2, 40vw);
+    }
+    .bookContainer {
+      height: 380px;
+    }
+        .footer {
+          margin-top: 25rem;
+        }
+}
+@media (max-width:589px){
+.bookContainer {
+    height: 400px;
+  }
+}
+@media (max-width:541px){
+.books {
+  grid-template-columns: 100%;
+          gap: 1%;
+  }
+    .bookContainer {
+      height: 380px;
+    }
+  .footer {
+          margin-top: 32rem;
+        }
+}
