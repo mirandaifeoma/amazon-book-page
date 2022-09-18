@@ -4,7 +4,7 @@ import { Login } from '../components/Login'
 import { Dashboard } from '../components/Dashboard'
 
 export const ValidationSchemaExample = () => {
-  const [user, setUser] = useState('dashboard')
+  const [user, setUser] = useState('login')
 
   const handleClick = (props) => {
     console.log(props)
