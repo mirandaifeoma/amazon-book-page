@@ -12,10 +12,11 @@ export const Form = ({ handleClick }) => {
     confirmpassword: '',
   }
 
-  const [formValues, setFormValues] = useState(intialValues)
-  const [formErrors, setFormErrors] = useState({})
-  const [isSubmitting, setIsSubmitting] = useState(false)
-  const [validatedItems, setValidatedItems] = useState([])
+  const [formValues, setFormValues] = useState(intialValues);
+  const [formErrors, setFormErrors] = useState({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [validatedItems, setValidatedItems] = useState([]);
+  const [open, setOpen] = useState(false); 
 
   const submit = () => {
     console.log(formValues)
@@ -208,7 +209,10 @@ export const Form = ({ handleClick }) => {
           )}
         </div>
 
-        <button type='submit' className='formButton'>
+        <button 
+        type='submit' 
+          onClick={() => setOpen((prev) => !prev) }
+          className={open ? 'formButton ' : 'close'}>
           Submit
         </button>
       </form>
